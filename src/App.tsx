@@ -1,15 +1,8 @@
-import React from 'react';
+import React from 'react'
+import Dashboard from './pages/dashboard'
 
 function App() {
-  return (
-    <div className="App">
-      <h1> Casamendo lincu e jesca </h1>
-      <button> comprar </button>
-      <button> comprar </button>
-      <button> comprar </button>
-      <button> comprar </button>
-    </div>
-  );
+  return <Dashboard/>
 }
 
 export default App;
