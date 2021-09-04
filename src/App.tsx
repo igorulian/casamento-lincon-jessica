@@ -1,8 +1,8 @@
 import React from 'react'
-import Dashboard from './pages/dashboard'
+import Main from './pages/main';
 
-function App() {
-  return <Dashboard/>
+const App:React.FC = () => {
+  return <Main/>
 }
 
 export default App;
