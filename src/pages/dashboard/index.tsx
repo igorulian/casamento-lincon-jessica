@@ -1,15 +1,16 @@
 import React from 'react'
 import { Image, SectionInfo, ImageContainer, ImageText, ImageTextContainer, SectinInfoTextSmall, SectionInfoContainer, SectinInfoTextBigWelcome, SectinInfoTextBigDate, LastSection } from './styles'
 import backgroundiamge from '../../assets/backgroundimage.jpg'
+import './text.css'
 
 const Dashboard:React.FC = () =>{
   return (
       <>
         <ImageContainer>
           <ImageTextContainer>
-            <ImageText> Jessica </ImageText>
-            <ImageText> {'&'} </ImageText>
-            <ImageText> Lincon </ImageText>
+            <ImageText className='maintext'> Jessica </ImageText>
+            <ImageText className='maintext'> {'&'} </ImageText>
+            <ImageText className='maintext'> Lincon </ImageText>
           </ImageTextContainer>
 
           <Image src={backgroundiamge}/>

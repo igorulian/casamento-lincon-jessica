@@ -22,8 +22,6 @@ export const ImageTextContainer = styled.div`
 `
 
 export const ImageText = styled.p`
-    @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-    font-family: 'Parisienne', initial;
     font-size: min(7vw, 90px);
     color: #fff;
 `
@@ -42,11 +40,12 @@ export const SectionInfoContainer = styled.div`
 export const SectionInfo = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
     height: fit-content;
-    background-color: #dceef5;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
 `
 
 export const SectinInfoTextSmall = styled.p`
@@ -58,13 +57,18 @@ export const SectinInfoTextSmall = styled.p`
     text-align: center;
     margin-bottom: 20px;
     letter-spacing: -1px;
+    width: 60%;
+    @media(max-width: 500px){
+        width: 100%;
+    }
+
 `
 
 export const SectinInfoTextBigDate = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
     font-family: 'Inter', monospace;
-    font-size:  min(6vw, 70px);
-    word-spacing: -20px;
+    font-size:  min(7vw, 70px);
+    word-spacing: -10px;
     color: #222;
     margin-top: 40px;
     margin-bottom: 40px;
