@@ -23,13 +23,9 @@ export const HeaderTitleContainer = styled.div`
     margin-top: 20px;
 `
 
-export const HeaderTitle = styled.p`
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    font-family: 'Montserrat', sans-serif;
-    color: #222;
-    font-size: 25px;
-    font-weight: bold;
-    align-items: center;
+export const HeaderLogo = styled.img`
+    width: 5%;
+    margin-bottom: 15px;
 `
 
 export const HeaderButtonsContainer = styled.div`

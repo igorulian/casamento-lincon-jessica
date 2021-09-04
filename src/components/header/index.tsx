@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { HeaderButton, HeaderButtonsContainer, HeaderContainer, HeaderTitle, HeaderTitleContainer } from './styles'
-
+import { HeaderButton, HeaderButtonsContainer, HeaderContainer, HeaderLogo, HeaderTitleContainer } from './styles'
+import logo from '../../assets/logo.png'
 
 interface IHeader {
     goToHome: Function,
@@ -21,10 +21,8 @@ const Header:React.FC<IHeader> = (props) =>{
 
     return (
         <HeaderContainer>
-            <HeaderTitleContainer> 
-                <HeaderTitle> J </HeaderTitle> 
-                <HeaderTitle style={{color: '#9a9a9a', marginRight: '5px', marginLeft: '5px'}}> {'&'} </HeaderTitle> 
-                <HeaderTitle> L </HeaderTitle>   
+            <HeaderTitleContainer>
+                <HeaderLogo src={logo}/>
             </HeaderTitleContainer>
 
             <HeaderButtonsContainer>
