@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { ListContainer, ItemsContainer, ItemContainer, ItemImage, ItemBuyButton, ItemNameText, ItemPriceText, ItemQRCode, ClickToCopy, ClickToCopyContainer, ClickToCopyText } from './styles';
 import ReactCardFlip from 'react-card-flip'
 import {RiFileCopyLine} from 'react-icons/ri'
-import { getItems } from '../../data/data';
+import { getItems } from '../../data/data'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 export interface IITem {
   name: string,
@@ -24,7 +25,6 @@ const Item:React.FC<ItemProps> = (props) => {
   const [copied, setCopied] = useState(false)
 
   function copycode() {
-    navigator.clipboard.writeText(codpix) //fix it later
     setCopied(true)
   }
 
@@ -43,9 +43,15 @@ const Item:React.FC<ItemProps> = (props) => {
 
        <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'> 
           <ItemNameText> {name} </ItemNameText>
+
           <ClickToCopyContainer>
-            <ClickToCopy onClick={() => {copycode()}}> <RiFileCopyLine/> {copied ? 'Código copiado!' : 'Clique aqui'} </ClickToCopy>
+
+            <CopyToClipboard text={codpix}>
+              <ClickToCopy onClick={() => {copycode()}}> <RiFileCopyLine/> {copied ? 'Código copiado!' : 'Clique aqui'} </ClickToCopy>
+            </CopyToClipboard>
+
             <ClickToCopyText> {copied ? ' ' : 'para copiar o código PIX'} </ClickToCopyText>
+
           </ClickToCopyContainer>
        </ReactCardFlip>
 

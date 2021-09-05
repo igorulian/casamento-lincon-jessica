@@ -11,9 +11,8 @@ const Footer:React.FC = () => {
                     <FooterDate> 19 de Março  </FooterDate>
                 </TitleContainer>
 
-                <TitleContainer style={{textAlign: 'center'}}>
-                    <FooterMadeby> Feito com carinho por </FooterMadeby>
-                    <FooterMadeby> Igor Ulian</FooterMadeby>
+                <TitleContainer style={{textAlign: 'center', justifyContent: 'center'}}>
+                    <FooterMadeby> Feito com carinho por Igor Ulian</FooterMadeby>
                 </TitleContainer>
             </FooterContent>
         </LastSection>

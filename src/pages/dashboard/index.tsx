@@ -19,13 +19,13 @@ const Dashboard:React.FC = () =>{
 
         <SectionInfoContainer>
           <SectionInfo style={{marginTop: '200px'}}>
-            <SectinInfoTextSmall style={{marginTop: '-150px'}}> vamos casar! </SectinInfoTextSmall>
+            <SectinInfoTextSmall style={{marginTop: '-100px', marginBottom: '-20px'}}> vamos casar! </SectinInfoTextSmall>
             <SectinInfoTextBigDate> 19 MARÇO 2022</SectinInfoTextBigDate>
             <SectinInfoTextSmall> Dourados, Mato Grosso do Sul </SectinInfoTextSmall>
           </SectionInfo>
 
-          <SectionInfo style={{marginBottom: '100px', marginTop: '200px'}}>
-            <SectinInfoTextSmall> Aos queridos e amados Pais, Padrinhos, Familiares e Amigos,</SectinInfoTextSmall>
+          <SectionInfo style={{marginBottom: '100px', marginTop: '150px'}}>
+            <SectinInfoTextSmall style={{marginBottom: '-15px'}}> Aos queridos e amados Pais, Padrinhos, Familiares e Amigos,</SectinInfoTextSmall>
             <SectinInfoTextBigWelcome> Bem-vindos ao nosso casamento! </SectinInfoTextBigWelcome>
             <SectinInfoTextSmall> Sim, é verdade! A gente vai se casar!!! </SectinInfoTextSmall>
             <SectinInfoTextSmall> E essa foi uma forma carinhosa e divertida que encontramos de trazer nossos amigos e familiares para mais perto de nós, durante todos os preparativos do dia mais importante de nossas vidas: o nosso casamento. Afinal, de nada adiantaria preparar tudo com tanto carinho se não pudéssemos compartilhar com as pessoas que amamos!!! </SectinInfoTextSmall>
