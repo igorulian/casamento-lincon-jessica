@@ -1,7 +1,8 @@
 import React from 'react'
-import { Image, SectionInfo, ImageContainer, ImageText, ImageTextContainer, SectinInfoTextSmall, SectionInfoContainer, SectinInfoTextBigWelcome, SectinInfoTextBigDate, LastSection } from './styles'
+import { Image, SectionInfo, ImageContainer, ImageText, ImageTextContainer, SectinInfoTextSmall, SectionInfoContainer, SectinInfoTextBigWelcome, SectinInfoTextBigDate } from './styles'
 import backgroundiamge from '../../assets/backgroundimage.jpg'
 import './text.css'
+import Footer from '../../components/footer'
 
 const Dashboard:React.FC = () =>{
   return (
@@ -13,12 +14,12 @@ const Dashboard:React.FC = () =>{
             <ImageText className='maintext'> Lincon </ImageText>
           </ImageTextContainer>
 
-          <Image src={backgroundiamge}/>
+          <Image src={backgroundiamge} loading="lazy"/>
         </ImageContainer>
 
         <SectionInfoContainer>
           <SectionInfo style={{marginTop: '200px'}}>
-            <SectinInfoTextSmall> vamos casar! </SectinInfoTextSmall>
+            <SectinInfoTextSmall style={{marginTop: '-150px'}}> vamos casar! </SectinInfoTextSmall>
             <SectinInfoTextBigDate> 19 MARÇO 2022</SectinInfoTextBigDate>
             <SectinInfoTextSmall> Dourados, Mato Grosso do Sul </SectinInfoTextSmall>
           </SectionInfo>
@@ -35,7 +36,7 @@ const Dashboard:React.FC = () =>{
         
         </SectionInfoContainer>
 
-        <LastSection/>
+        <Footer/>
       </>
   );
 }

@@ -10,6 +10,7 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
     width: 100%;
+    opacity: 0.95;
 `
 
 export const ImageTextContainer = styled.div`
@@ -22,8 +23,9 @@ export const ImageTextContainer = styled.div`
 `
 
 export const ImageText = styled.p`
-    font-size: min(7vw, 90px);
+    font-size: min(7vw, 100px);
     color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 `
 
 
@@ -83,11 +85,4 @@ export const SectinInfoTextBigWelcome = styled.p`
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
-`
-
-
-export const LastSection = styled.div`
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
 `
