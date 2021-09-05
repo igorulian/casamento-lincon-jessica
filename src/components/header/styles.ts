@@ -24,7 +24,7 @@ export const HeaderTitleContainer = styled.div`
 `
 
 export const HeaderLogo = styled.img`
-    width: 5%;
+    width: 100px;
     margin-bottom: 15px;
 `
 

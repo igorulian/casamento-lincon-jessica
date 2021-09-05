@@ -43,7 +43,7 @@ export const ItemImage = styled.img`
 export const ItemNameText = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     font-family: 'Montserrat', sans-serif;
-    color: #ccc;
+    color: #adadad;
     text-align: center;
     margin-top: 10px;
 `
@@ -62,7 +62,7 @@ export const ItemBuyButton = styled.button`
     border: none;
     width: 100%;
     height: 50px;
-    background-color: #1abc9c;
+    background-color: #62041D;
     margin-top: 10px;
     border-radius: 20px;
     color: #fff;
