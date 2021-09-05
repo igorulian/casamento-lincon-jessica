@@ -61,7 +61,7 @@ export const SectinInfoTextSmall = styled.p`
     letter-spacing: -1px;
     width: 60%;
     @media(max-width: 500px){
-        width: 100%;
+        width: 90%;
     }
 
 `
